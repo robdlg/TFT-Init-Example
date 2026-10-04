@@ -8,6 +8,7 @@
 #include <SPI.h>
 
 // Define T-Dongle-S3 Display pins
+// ESP32-S3 GPIO
 #define TFT_CS    4
 #define TFT_RST   1
 #define TFT_DC    2
@@ -21,7 +22,7 @@ Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RS
 void setup() {
   // Turn on the backlight
   pinMode(TFT_BL, OUTPUT);
-  digitalWrite(TFT_BL, HIGH);
+  digitalWrite(TFT_BL, LOW);
 
   // Initialize display for 80x160 ST7735 (Green tab or standard mini)
   tft.initR(INITR_MINI160x80); 
