@@ -26,13 +26,13 @@ void setup() {
 
   // Initialize display for 80x160 ST7735
   tft.initR(INITR_MINI160x80_PLUGIN); 
-  tft.setRotation(3); // Adjust rotation as needed (0 - 3)
+  tft.setRotation(1); // Adjust rotation as needed (0 - 3)
   
-  tft.fillScreen(ST7735_BLUE);
+  tft.fillScreen(ST7735_BLACK);
   tft.setCursor(0, 0);
   tft.setTextColor(ST7735_WHITE);
-  tft.setTextSize(2);
-  tft.println("LILYGO\nT-Dongle-S3\ndemo for\nLinkedIn post");
+  tft.setTextSize(1);
+  tft.println("T-Dongle-S3 ready!");
 }
 
 void loop() {
