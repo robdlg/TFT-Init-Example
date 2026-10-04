@@ -24,8 +24,8 @@ void setup() {
   pinMode(TFT_BL, OUTPUT);
   digitalWrite(TFT_BL, LOW);
 
-  // Initialize display for 80x160 ST7735 (Green tab or standard mini)
-  tft.initR(INITR_MINI160x80); 
+  // Initialize display for 80x160 ST7735
+  tft.initR(INITR_MINI160x80_PLUGIN); 
   tft.setRotation(1); // Adjust rotation as needed (0 - 3)
   
   tft.fillScreen(ST7735_BLACK);
